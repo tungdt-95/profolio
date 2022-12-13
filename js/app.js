@@ -41,23 +41,32 @@
    
 // })
 
-const tl =  gsap.timeline();
+// const tl =  gsap.timeline();
 
-tl.to('.loading__text',{
-    delay: .8,
-    duration: 2,
-    opacity: 0,
-    yPercent: -400,
-    ease:'BezierEasing(0.19,1,0.22,1)'
-})
-tl.to('.title',{
-    delay: .3,
-    duration: 1,
-    opacity: 1,
-    y: -10,
-    ease: Expo.EaseInout,
-})
-tl.to("#preloader",{
-    delay: 2,
-    opacity: 0,
-})
+// tl.to('.loading__text',{
+//     delay: .8,
+//     duration: 2,
+//     opacity: 0,
+//     yPercent: -400,
+//     ease:'BezierEasing(0.19,1,0.22,1)'
+// })
+// tl.to('.title',{
+//     delay: .3,
+//     duration: 1,
+//     opacity: 1,
+//     y: -10,
+//     ease: Expo.EaseInout,
+// })
+// tl.to("#preloader",{
+//     delay: 2,
+//     opacity: 0,
+// })
+
+
+
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $(this).next('.sub__menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate')
+    });
+  });

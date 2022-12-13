@@ -52,6 +52,20 @@ li {
   border-left: 40px solid red
 
 }
+.toggle
+{
+  width: 30%;
+  margin: 80px auto;
+}
+.rotate 
+{
+  transform: rotate(90deg);
+  transition: .3s ease-in-out;
+}
+.sub__menu
+{
+  display: none;
+}
 /* 
                         l:PC
                         m:TAPLET
